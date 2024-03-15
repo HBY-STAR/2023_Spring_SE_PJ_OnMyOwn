@@ -1,0 +1,21 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    #配置mysql驱动
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #连接数据库的ur
+    url: jdbc:mysql://localhost:3306/LAB_2_DATABASE?serverTimezone=GMT%2b8
+    #用户名
+    username: root
+    #密码
+    password: HBy20030925
+
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+file:
+  upload-path: D:\2023_SE_lab_file\image\
